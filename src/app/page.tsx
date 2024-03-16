@@ -13,7 +13,7 @@ export default function Home() {
               <a href="/about">私について</a>
               <a href="/portfolio">ポートフォリオ</a>
               <a href="/services">サービス</a>
-              <a href="/contact">お問い合わせ</a>
+              <a href="/contact">連絡先</a>
             </nav>
           </div>
         </div>
