@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Kosugi } from "next/font/google";
+import { Inter as FontSans } from "next/font/google"
 import "./globals.css";
 import Providers from "@/providers";
 import { cn } from "@/lib/utils";
 
-const inter = Kosugi({ weight: "400", subsets: ["latin"] });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: "龍",
@@ -21,7 +24,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          inter.className
+          fontSans.variable
         )}
       >
         <Providers>
