@@ -1,5 +1,4 @@
 import Ocarina3D from "@/components/Ocarina3D";
-import Image from "next/image";
 
 export default function Home() {
   return (
