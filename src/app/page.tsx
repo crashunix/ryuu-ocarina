@@ -2,7 +2,7 @@ import Ocarina3D from "@/components/Ocarina3D";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-[100dvh] flex flex-col">
       <header className="">
         <div className="container px-4 mx-auto">
           <div className="flex items-center justify-between py-16">
