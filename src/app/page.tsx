@@ -1,4 +1,6 @@
-import Ocarina3D from "@/components/Ocarina3D";
+import Render3D from "@/components/Render3D";
+import ThemeSwitcher from "@/components/themeSwitcher";
+import { ThreeD } from "@/types/ThreeD";
 
 export default function Home() {
   return (
@@ -6,28 +8,29 @@ export default function Home() {
       <header className="">
         <div className="container px-4 mx-auto">
           <div className="flex items-center justify-between py-16">
-            <h1 className="text-5xl text-nihon-red">龍</h1>
+            <h1 className="text-5xl text-primary">龍</h1>
             <nav className="items-center space-x-6 z-10 hidden md:flex">
-              <a href="/home" className="border-b border-b-nihon-red">ホーム</a>
+              <a href="/home" className="border-b border-b-primary">ホーム</a>
               <a href="/about">私について</a>
               <a href="/portfolio">ポートフォリオ</a>
               <a href="/services">サービス</a>
               <a href="/contact">連絡先</a>
+              <ThemeSwitcher />
             </nav>
           </div>
         </div>
       </header>
       <div className="flex-1 container px-4 mx-auto flex justify-end items-stretch relative">
         <div className="fixed inset-0 md:-left-1/3">
-          <Ocarina3D />
+          <Render3D scene={ThreeD.OCARINA} />
         </div>
         <span className="[writing-mode:vertical-rl] md:text-5xl text-center">技術によって、夢<br className="hidden md:block" />は現実に変わる。</span>
       </div>
       <div className="container px-4 mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex flex-col py-16">
-            <h2 className="text-white text-2xl z-10">クラッシュユニックス</h2>
-            <span className="text-nihon-red z-10">ソフトウェア開発者</span>
+            <h2 className="text-2xl z-10">クラッシュユニックス</h2>
+            <span className="text-primary z-10">ソフトウェア開発者</span>
           </div>
           <div className="flex items-center space-x-6 z-10">
             <a target="_blank" href="https://github.com/crashunix">
