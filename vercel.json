@@ -1,0 +1,5 @@
+{
+    "redirects": [
+      { "source": "ryuu-ocarina.vercel.app", "destination": "ryuu.crashunix.nl/teste", "permanent": true }
+    ]
+  }
