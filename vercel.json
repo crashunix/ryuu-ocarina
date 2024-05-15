@@ -6,7 +6,7 @@
             "has": [
                 {
                     "type": "host",
-                    "value": "ryuu-ocarina.vercel.app/"
+                    "value": "ryuu-ocarina.vercel.app"
                 }
             ],
             "permanent": true
